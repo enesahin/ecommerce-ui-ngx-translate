@@ -1,0 +1,51 @@
+{
+    "APP": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "BASKET": "Basket: {{ count }}",
+      "LOGIN": "Login",
+      "LOGOUT": "Logout"
+    },
+
+    "HOME": {
+      "PRODUCTS": "Products",
+      "ADDBASKET": "Add to Basket!",
+      "MOREINFO": "More Info",
+      "LOGALERT": "You must login to buy."
+    },
+
+    "LOG": {
+      "SUCC": "Successfully logged in!",
+      "FAIL": "Wrong username or password.",
+      "OUT": "You have successfully logged out!"
+    },
+
+    "REG": {
+      "SUCC": "Registration successful!",
+      "FAIL": "Registration not successful!"
+    },
+
+    "CART":{
+      "TITLE": "Products in My Basket",
+      "DELETE": "Delete one item!",
+      "TOTAL": "Total : {{total}} $"
+    },
+
+    "DETAIL":{
+      "TITLE": "Product Details"
+    },
+
+    "FORM":{
+      "LOGIN":"Login",
+      "REG":"Register",
+      "CANCEL":"Cancel",
+      "NAME": "Name",
+      "NAMEVALID": "Name is required",
+      "EMAIL": "EMail",
+      "EMAILVALID": "EMail is required",
+      "PW": "Password",
+      "PWVALID": "Password is required",
+      "PWVALID6": "Password must be at least 6 characters"
+    }
+  }
+  

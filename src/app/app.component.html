@@ -1,0 +1,62 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="" [translate]="'APP.HOME'"></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a [translate]="'APP.ABOUT'" ></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a *ngIf="this.authenticationService.loginCheck()">{{updatedUserName()}}</a>
+        </li>
+        <li>
+          <a *ngIf="this.authenticationService.loginCheck()" (click)="logout()" [translate]="'APP.LOGOUT'"></a>
+        </li>
+        <li>
+          <a *ngIf="!this.authenticationService.loginCheck()" routerLink="/login" [translate]="'APP.LOGIN'"></a>
+        </li>
+        <li>
+          <a routerLink="/cart" [translate]="'APP.BASKET'" [translateParams]="{count: totalCount()}"></a>
+        </li>
+        <li>
+          <a #EN (click)="setPrefLang('EN')" >EN</a>
+        </li>
+        <li>
+          <a #TR (click)="setPrefLang('TR')" >TR</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- Router -->
+<div class="container">
+  <alert></alert>
+  <router-outlet></router-outlet>
+</div>
+<!-- Router -->
+
+<div class="container">
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; ECommerceUI 2018</p>
+      </div>
+    </div>
+  </footer>
+</div>

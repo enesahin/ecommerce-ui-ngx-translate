@@ -1,0 +1,51 @@
+{
+    "APP": {
+      "HOME": "Ana Sayfa",
+      "ABOUT": "Hakkında",
+      "BASKET": "Sepet: {{count}}",
+      "LOGIN": "Giriş Yap",
+      "LOGOUT": "Çıkış Yap"
+    },
+
+    "HOME": {
+      "PRODUCTS": "Ürünler",
+      "ADDBASKET": "Sepete Ekle!",
+      "MOREINFO": "Ürün Bilgisi",
+      "LOGALERT": "Sepete eklemek için giriş yapın."
+    },
+
+    "LOG": {
+      "SUCC": "Başarıyla giriş yapıldı!",
+      "FAIL": "Hatalı mail veya şifre.",
+      "OUT": "Başarıyla çıkış yaptınız!"
+    },
+
+    "REG": {
+      "SUCC": "Kayıt başarılı!",
+      "FAIL": "Hayıt başarısız!"
+    },
+
+    "CART":{
+      "TITLE": "Sepetimdeki Ürünler",
+      "DELETE": "Bir adet ürünü sil!",
+      "TOTAL": "Toplam : {{total}} $"
+    },
+
+    "DETAIL":{
+      "TITLE": "Ürün Detayları"
+    },
+
+    "FORM":{
+      "LOGIN":"Giriş",
+      "REG":"Kaydol",
+      "CANCEL":"iptal",
+      "NAME": "İsim",
+      "NAMEVALID": "İsim gereklidir",
+      "EMAIL": "EMail",
+      "EMAILVALID": "EMail gereklidir",
+      "PW": "Parola",
+      "PWVALID": "Parola gereklidir",
+      "PWVALID6": "Parola en az 6 karakterden oluşmalıdır"
+    }
+  }
+  

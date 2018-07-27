@@ -1,0 +1,29 @@
+<!-- Page Content -->
+<div class="container">
+  <!-- Jumbotron Header -->
+  <header>
+  </header>
+  <!-- Title -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h3  [translate]="'HOME.PRODUCTS'" ></h3>
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- Page Features -->
+  <div class="row text-center">
+    <div class="col-md-3 col-sm-6 hero-feature" *ngFor="let product of productList">
+      <div class="thumbnail">
+        <img src="{{product.ImageUrl}}" alt="">
+        <div class="caption">
+          <h3  >{{product.Name}}</h3>
+          <h1  >{{product.Price}} $</h1>
+          <p>
+            <a (click)="addCart(product)" class="btn btn-primary" [translate]="'HOME.ADDBASKET'" ></a>
+            <a (click)="goInfo(product.ProductId)" class="btn btn-default"  [translate]="'HOME.MOREINFO'" ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

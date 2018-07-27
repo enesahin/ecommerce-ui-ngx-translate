@@ -1,0 +1,19 @@
+<h2 class="page-header" [translate]="'CART.TITLE'" >Products in My Basket</h2>
+<div class="row">
+    <div class=" col col-lg-6">
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item" *ngFor="let item of cartList">
+                <div class="row">
+                    <div class="col col-lg-8 h4">
+                        <label>&#9679; {{ item.ProductName }} - {{ item.Count }} = {{totalPrice(item)}} $</label>
+                    </div>
+                    <div class="col col-lg-4">
+                        <button (click)="deleteItem(item.ProductId)" class="btn btn-primary" [translate]="'CART.DELETE'"  ></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h3 class="panel-footer" [translate]="'CART.TOTAL'" [translateParams]="{total: totalShopping()}" ></h3>
+    </div>
+    <div class="col col-lg-6"></div>
+</div>
